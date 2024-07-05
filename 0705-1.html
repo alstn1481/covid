@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid19</title>
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        h1 {display: none;}
+        section {max-width: 1000px ; margin: auto; border: 5px dashed red; margin-top: 50px; position: relative; overflow: hidden;}
+        img {display: block;} /*이미지는 인라인 요소라 아래여백이 생기기에 여백을 없애주기 위함*/
+        img:not(:first-of-type) {position: absolute;}
+        
+
+        [src *="bg4"] {width: 100%;}
+        [src *="4-1.png"] {top: 20%; left: 0; width: 57%; animation: rotate 2s 1s both;}
+        [src *="4-2"] {top: 0%; left: 0; width: 62%; animation: scaleX 1s both;}
+        [src *="4-3"] {bottom: 0%; left: 0; width: 35%; animation: up 1s 1.5s both;}
+        [src *="4-4"] {top: 0%; right: 0; width:35%; animation: toRight 1s 1s both;}
+        [src *="4-5"] {bottom: 0%; right: 0; width: 48%; animation: up 1s 1s both;}
+        [src *="4-6"] {top: 57%; right: 0; width: 20%; animation: scaleY 1s 2s both;}
+        [src *="4-7"] {top: 67%; right: 0; width: 20%; animation: scaleY 1s 2s both;}
+        [src *="4-8"] {top: 77%; right: 0; width: 20%; animation: scaleY 1s 2s both;}
+        [src *="4-9"] {top: 0%; right: 0; width: 20%; animation: toRight 1s 1s both;}
+        [src *="4-10"] {top: 14%; left: 57%; width: 25%; animation: rotate 1s 3s both;}
+        [src *="4-11"] {bottom: 1%; left: 27%; width: 35%; animation: up 1s 3s both;}
+
+
+        @keyframes rotate {
+            from {transform: rotate(-720deg); scale: 0; opacity: 0;}
+            to {transform: rotate(0deg); scale: 1; opacity: 1;}
+        }
+        @keyframes scaleX {
+            from {transform: scaleX(0);}
+            to {transform: scaleX(1);}
+        }
+        @keyframes up {
+            from {bottom: -100px; opacity: 0;}
+            to {bottom: 0px; opacity: 1;}
+        }
+        @keyframes toRight {
+            from {right: -100px; opacity: 0;}
+            to {right: 0px; opacity: 1;}
+        }
+        @keyframes scaleY {
+            from {transform: scaleY(0);}
+            to {transform: scaleY(1);}
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <section>
+        <h1>코비드 극복하기</h1>
+        <img src="images/bg4.jpg" alt="배경">
+        <img src="images/4-1.png" alt="마스크">
+        <img src="images/4-2.png" alt="전염을 막는 지혜로운 방법">
+        <img src="images/4-3.png" alt="우리 함께 잘 견디고 이겨내요!">
+        <img src="images/4-4.png" alt="손청결제와 마스크">
+        <img src="images/4-5.png" alt="손청결제">
+        <img src="images/4-6.png" alt="뉴에티켓">
+        <img src="images/4-7.png" alt="팩트체크">
+        <img src="images/4-8.png" alt="치유레터">
+        <img src="images/4-9.png" alt="boom">
+        <img src="images/4-10.png" alt="지구와 돋보기">
+        <img src="images/4-11.png" alt="http://covid19seoulmind.org">
+    </section>
+</body>
+</html>
